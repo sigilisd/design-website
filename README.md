@@ -1,6 +1,6 @@
-# Website builder
+# Web Studio Landing Page
 
-Веб-сайт по созданию сайтов 
+Лендинг веб-студии
 
 ![alt text](image/about.png)
 
