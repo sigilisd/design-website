@@ -1,120 +1,335 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Дизайнерский сайт</title>
+	<meta name="description" content="Lilith - креативное цифровое агентство. Создаем потрясающий цифровой опыт через UI/UX дизайн, веб-разработку и иллюстрации.">
+	<meta name="keywords" content="веб-дизайн, UI/UX, веб-разработка, иллюстрации, цифровое агентство">
+	<meta name="author" content="Lilith Digital Agency">
+	<meta property="og:title" content="Lilith - Создаем потрясающий цифровой опыт">
+	<meta property="og:description" content="Креативное цифровое агентство, занимающееся проектированием и созданием красивых цифровых продуктов">
+	<meta property="og:type" content="website">
+	<title>Lilith - Креативное цифровое агентство | UI/UX Дизайн | Веб-разработка</title>
+	<link rel="icon" type="image/svg+xml" href="image/logo.svg">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.google.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.cdnfonts.com/css/arkhip" rel="stylesheet">       
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.cdnfonts.com/css/arkhip" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <section id="n1" class="header">
 	<nav>
-		<a href="index.html"><img class="logo" src="image/logo.svg" width="50px" height="50px"></a>
+		<a href="index.html"><img class="logo" src="image/logo.svg" alt="Lilith Logo" width="50" height="50"></a>
 		<div class="nav-links" id="navLinks">
 			<i class="fa fa-times" onclick="hideMenu()"></i>
 			<ul>
-				<li><a href="#n1">ГЛАВНАЯ</li></a>
-				<li><a href="#n2">МЫ</li></a>
-				<li><a href="#n3">УСЛУГИ</li></a>
-				<li><a href="#n4">РАБОТЫ</li></a>
+				<li><a href="#n1">ГЛАВНАЯ</a></li>
+				<li><a href="#n2">О НАС</a></li>
+				<li><a href="#n3">УСЛУГИ</a></li>
+				<li><a href="#n4">РАБОТЫ</a></li>
+				<li><a href="#n5">КОНТАКТЫ</a></li>
 			</ul>
 		</div>
 		<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
+	</nav>
 
-		<div class="text-box">
-			<p>МЫ - БЕСКОНЕЧНОСТЬ</p>
-			<h1 class="h">МЫ СОЗДАЕМ<br>
-				ПОТРЯСАЮЩИЙ<br>
-				ЦИФРОВОЙ ОПЫТ</h1><br><br>
-			<a href="#n2" class="hero-btn">БОЛЬШЕ</a>
+	<div class="text-box">
+		<p class="subtitle">МЫ - БЕСКОНЕЧНОСТЬ</p>
+		<h1 class="hero-title">МЫ СОЗДАЕМ<br>
+			ПОТРЯСАЮЩИЙ<br>
+			ЦИФРОВОЙ ОПЫТ</h1>
+		<p class="hero-description">Превращаем ваши идеи в цифровую реальность</p>
+		<div class="hero-buttons">
+			<a href="#n2" class="hero-btn primary">УЗНАТЬ БОЛЬШЕ</a>
+			<a href="#n5" class="hero-btn secondary">СВЯЗАТЬСЯ</a>
 		</div>
+	</div>
+	
+	<div class="scroll-indicator">
+		<div class="scroll-arrow"></div>
+	</div>
 </section>
 
-<section id="n2" class="about1">
-	<h1>МЫ</h1>
-	<p>Lilith - это креативное цифровое<br> агенство, занимающееся<br> проектированием и созданием<br> красивых цифровых продуктов,<br> брендов и впечатлений.</p>
+<section id="n2" class="about">
+	<div class="container">
+		<div class="about-content">
+			<div class="about-text">
+				<h2>О НАС</h2>
+				<p class="about-description">Lilith - это креативное цифровое агентство, занимающееся проектированием и созданием красивых цифровых продуктов, брендов и впечатлений.</p>
+				<div class="stats">
+					<div class="stat-item">
+						<span class="stat-number">50+</span>
+						<span class="stat-label">Проектов</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">3</span>
+						<span class="stat-label">Года опыта</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">100%</span>
+						<span class="stat-label">Довольных клиентов</span>
+					</div>
+				</div>
+			</div>
+			<div class="about-image">
+				<img src="image/about.png" alt="О нас" loading="lazy">
+			</div>
+		</div>
+	</div>
 </section>
 
-<!-- УСЛУГИ -->	
 <section id="n3" class="services">
-	<h3 class="g">УСЛУГИ</h3>
-	<h1>Что мы делаем</h1>
-	<p>Будучи независимыми, мы способны делать выбор, основанный на наших<br> ценностях. Мы ценим красоту и истину и не работаем с людьми или<br> организациями, которые этого не делают. Мы считаем, что цифровой<br> дизайн несет с собой огромную ответственность за построение лучшего<br> будущего для всех.<br>
-	Мы создаем впечатляющий цифровой опыт, который привлекает и<br> вовлекает в работу</p>
+	<div class="container">
+		<div class="section-header">
+			<h3 class="section-subtitle">УСЛУГИ</h3>
+			<h2>Что мы делаем</h2>
+			<p class="section-description">Будучи независимыми, мы способны делать выбор, основанный на наших ценностях. Мы ценим красоту и истину и не работаем с людьми или организациями, которые этого не делают. Мы считаем, что цифровой дизайн несет с собой огромную ответственность за построение лучшего будущего для всех.</p>
+		</div>
 
-	<div class="row">
-		<div class="services-col">
-			<h3>UI/UX Дизайн</h3>
-			<p>Это проектирование удобных, понятных и эстетичных пользовательских интерфейсов.
-			UX — user experience — переводится на русский язык как «пользовательский опыт». Это понятие включает в себя навигацию по сайту или приложению, состав функций внутри цифрового продукта, понятный текст.</p>
-		</div>
-		<div class="services-col">
-			<h3>Веб-разработка</h3>
-			<p>Процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
-		</div>
-		<div class="services-col">
-			<h3>Иллюстрации</h3>
-			<p>Иллюстрации выполняют самые разные функции — работают как визуальные пояснения и наглядные примеры, делают бренд узнаваемым, поддерживают стилистическое единство проекта, помогают выделить главное. Иллюстрации делают проект уникальным и запоминающимся, единственным в своем роде. Они вызывают расположение и доверие пользователей к ресурсу.</p>
+		<div class="services-grid">
+			<div class="service-card" data-aos="fade-up">
+				<div class="service-icon">
+					<i class="fa fa-paint-brush"></i>
+				</div>
+				<h3>UI/UX Дизайн</h3>
+				<p>Проектируем удобные, понятные и эстетичные пользовательские интерфейсы. UX включает навигацию, функциональность и понятный контент для создания незабываемого пользовательского опыта.</p>
+				<div class="service-features">
+					<span>Прототипирование</span>
+					<span>Анализ пользователей</span>
+					<span>Тестирование</span>
+				</div>
+			</div>
+			
+			<div class="service-card" data-aos="fade-up" data-aos-delay="200">
+				<div class="service-icon">
+					<i class="fa fa-code"></i>
+				</div>
+				<h3>Веб-разработка</h3>
+				<p>Создаем современные веб-сайты и приложения с использованием передовых технологий. От дизайна до запуска - полный цикл разработки цифровых решений.</p>
+				<div class="service-features">
+					<span>Frontend</span>
+					<span>Backend</span>
+					<span>CMS</span>
+				</div>
+			</div>
+			
+			<div class="service-card" data-aos="fade-up" data-aos-delay="400">
+				<div class="service-icon">
+					<i class="fa fa-pencil"></i>
+				</div>
+				<h3>Иллюстрации</h3>
+				<p>Создаем уникальные иллюстрации, которые делают ваш проект узнаваемым и запоминающимся. От концепции до финального результата - каждая деталь продумана.</p>
+				<div class="service-features">
+					<span>Брендинг</span>
+					<span>Иконки</span>
+					<span>Графика</span>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- РАБОТЫ -->
 <section id="n4" class="works">
-	<h3 class="g">РАБОТЫ</h3>
-	<h1>Ознакомьтесь с нашими избранными проектами</h1>
-	<p>Каждый проект, созданный передовой командой, создается на<br> пересечении дизайна и технологий, создавая будущее – сегодня.</p>
+	<div class="container">
+		<div class="section-header">
+			<h3 class="section-subtitle">РАБОТЫ</h3>
+			<h2>Ознакомьтесь с нашими избранными проектами</h2>
+			<p class="section-description">Каждый проект, созданный нашей командой, создается на пересечении дизайна и технологий, создавая будущее – сегодня.</p>
+		</div>
 
-	<div class="row">
-		<div class="works-col">
-			<a href="http://www.kosygina21.ru" target="_blank"><img src="image/1.png"></a>
-		</div>	
-		<div class="works-col">
-			<a href="https://eniteo.ru" target="_blank"><img src="image/2.png"></a>
-		</div>
-		<div class="works-col">
-			<a href="https://k24moscow.ru" target="_blank"><img src="image/3.png"></a>
-		</div>
-	</div>
-		<div class="row">
-		<div class="works-col">
-		<a href="https://p9.moscow/en/" target="_blank"><img src="image/4.png"></a>
-		</div>
-		<div class="works-col">
-		<a href="https://foodcomplianceinternational.com" target="_blank"><img src="image/5.png"></a>
-		</div>
-		<div class="works-col">
-		<a href="https://naftagaz.com/en/" target="_blank"><img src="image/6.png"></a>
-		</div>
-	</div>
-		<div class="row">
-		<div class="works-col">
-		<a href="https://ever.ru" target="_blank"><img src="image/7.png"></a>
-		</div>
-		<div class="works-col">
-		<a href="https://vp.moscow/en/" target="_blank"><img src="image/8.png"></a>
-		</div>
-		<div class="works-col">
-		<a href="https://www.nevatowers.ru" target="_blank"><img src="image/9.png"></a>
+		<div class="works-grid">
+			<div class="work-item" data-aos="zoom-in">
+				<a href="http://www.kosygina21.ru" target="_blank" rel="noopener">
+					<img src="image/1.png" alt="Проект 1" loading="lazy">
+					<div class="work-overlay">
+						<h4>Косыгина 21</h4>
+						<p>Веб-сайт</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="100">
+				<a href="https://eniteo.ru" target="_blank" rel="noopener">
+					<img src="image/2.png" alt="Проект 2" loading="lazy">
+					<div class="work-overlay">
+						<h4>Eniteo</h4>
+						<p>Веб-приложение</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="200">
+				<a href="https://k24moscow.ru" target="_blank" rel="noopener">
+					<img src="image/3.png" alt="Проект 3" loading="lazy">
+					<div class="work-overlay">
+						<h4>K24 Moscow</h4>
+						<p>Корпоративный сайт</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="300">
+				<a href="https://p9.moscow/en/" target="_blank" rel="noopener">
+					<img src="image/4.png" alt="Проект 4" loading="lazy">
+					<div class="work-overlay">
+						<h4>P9 Moscow</h4>
+						<p>Лендинг</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="400">
+				<a href="https://foodcomplianceinternational.com" target="_blank" rel="noopener">
+					<img src="image/5.png" alt="Проект 5" loading="lazy">
+					<div class="work-overlay">
+						<h4>Food Compliance</h4>
+						<p>Интернет-магазин</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="500">
+				<a href="https://naftagaz.com/en/" target="_blank" rel="noopener">
+					<img src="image/6.png" alt="Проект 6" loading="lazy">
+					<div class="work-overlay">
+						<h4>NaftaGaz</h4>
+						<p>Корпоративный портал</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="600">
+				<a href="https://ever.ru" target="_blank" rel="noopener">
+					<img src="image/7.png" alt="Проект 7" loading="lazy">
+					<div class="work-overlay">
+						<h4>Ever.ru</h4>
+						<p>Веб-сервис</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="700">
+				<a href="https://vp.moscow/en/" target="_blank" rel="noopener">
+					<img src="image/8.png" alt="Проект 8" loading="lazy">
+					<div class="work-overlay">
+						<h4>VP Moscow</h4>
+						<p>Промо-сайт</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="work-item" data-aos="zoom-in" data-aos-delay="800">
+				<a href="https://www.nevatowers.ru" target="_blank" rel="noopener">
+					<img src="image/9.png" alt="Проект 9" loading="lazy">
+					<div class="work-overlay">
+						<h4>Nevatowers</h4>
+						<p>Корпоративный сайт</p>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
 
+<section id="n5" class="contact">
+	<div class="container">
+		<div class="section-header">
+			<h3 class="section-subtitle">КОНТАКТЫ</h3>
+			<h2>Давайте создадим что-то потрясающее вместе</h2>
+			<p class="section-description">Готовы начать свой проект? Свяжитесь с нами, и мы обсудим, как можем помочь воплотить ваши идеи в жизнь.</p>
+		</div>
+		
+		<div class="contact-content">
+			<div class="contact-info">
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="contact-details">
+						<h4>Email</h4>
+						<p>hello@lilith.agency</p>
+					</div>
+				</div>
+				
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="contact-details">
+						<h4>Телефон</h4>
+						<p>+7 (812) 999-99-99</p>
+					</div>
+				</div>
+				
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fa fa-map-marker"></i>
+					</div>
+					<div class="contact-details">
+						<h4>Адрес</h4>
+						<p>Санкт-Петербург, ул. Мира, 3</p>
+					</div>
+				</div>
+				
+				<div class="social-links">
+					<a href="#" class="social-link"><i class="fa fa-telegram"></i></a>
+					<a href="#" class="social-link"><i class="fa fa-whatsapp"></i></a>
+					<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			
+			<div class="contact-form">
+				<form id="contactForm">
+					<div class="form-group">
+						<input type="text" id="name" name="name" placeholder="Ваше имя" required>
+					</div>
+					<div class="form-group">
+						<input type="email" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input type="text" id="subject" name="subject" placeholder="Тема проекта" required>
+					</div>
+					<div class="form-group">
+						<textarea id="message" name="message" placeholder="Расскажите о вашем проекте" rows="5" required></textarea>
+					</div>
+					<button type="submit" class="submit-btn">
+						<span>Отправить сообщение</span>
+						<i class="fa fa-paper-plane"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 
-<!--  FOOTER -->
 <section class="footer">
-	<p>© Copyright 2024 LILITH</p>
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-logo">
+				<img src="image/logo.svg" alt="Lilith Logo" width="40" height="40">
+				<span>LILITH</span>
+			</div>
+			<div class="footer-links">
+				<a href="#n1">Главная</a>
+				<a href="#n2">О нас</a>
+				<a href="#n3">Услуги</a>
+				<a href="#n4">Работы</a>
+				<a href="#n5">Контакты</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2024 LILITH Digital Agency. Все права защищены.</p>
+		</div>
+	</div>
 </section>
 
-<script src="https://kit.fontawesome.com/fce9a50d02.js"
-crossorigin="anonymous">
-</script>
+<div class="back-to-top" id="backToTop">
+	<i class="fa fa-chevron-up"></i>
+</div>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
