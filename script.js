@@ -201,7 +201,7 @@ function removeNotification(notification) {
 // Removed for simplicity
 
 // Typing effect for hero title (optimized)
-function typeWriter(element, text, speed = 50) {
+function typeWriter(element, text, speed = 40) {
     let index = 0;
     const originalHTML = element.innerHTML;
     element.textContent = '';
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroTitle) {
         const originalText = heroTitle.textContent.trim();
         // Use requestIdleCallback or fallback to setTimeout to avoid blocking first paint
-        const startTyping = () => typeWriter(heroTitle, originalText, 50);
+        const startTyping = () => typeWriter(heroTitle, originalText, 40);
         if ('requestIdleCallback' in window) {
             requestIdleCallback(startTyping, { timeout: 200 });
         } else {
