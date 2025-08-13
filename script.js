@@ -200,28 +200,35 @@ function removeNotification(notification) {
 // Parallax effect for hero section - Simplified
 // Removed for simplicity
 
-// Typing effect for hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
+// Typing effect for hero title (optimized)
+function typeWriter(element, text, speed = 50) {
+    let index = 0;
+    const originalHTML = element.innerHTML;
+    element.textContent = '';
     
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
+    function typeNext() {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeNext, speed);
         }
     }
     
-    type();
+    typeNext();
 }
 
 // Initialize typing effect when page loads
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.textContent;
-        typeWriter(heroTitle, originalText, 80);
+        const originalText = heroTitle.textContent.trim();
+        // Use requestIdleCallback or fallback to setTimeout to avoid blocking first paint
+        const startTyping = () => typeWriter(heroTitle, originalText, 50);
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(startTyping, { timeout: 200 });
+        } else {
+            setTimeout(startTyping, 50);
+        }
     }
 });
 
