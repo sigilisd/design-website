@@ -12,7 +12,7 @@ html {
 body {
 	font-family: 'Arkhip', sans-serif;
 	line-height: 1.6;
-	color: #1f2937;
+	color: #657a97;
 	overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 	line-height: 1.2;
-	color: #1f2937;
+	color: #657a97;
 }
 
 h1 { font-size: 3.5rem; }
@@ -36,7 +36,7 @@ h4 { font-size: 1.8rem; }
 
 p {
 	font-size: 1.1rem;
-	color: #4b5563;
+	color: #657a97;
 	line-height: 1.7;
 }
 
@@ -45,7 +45,7 @@ p {
 	min-height: 100vh;
 	width: 100%;
 	background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2d2d2d 100%);
-	background-image: url(image/new-bg.jpg);
+	background-image: url(image/bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-blend-mode: overlay;
@@ -118,7 +118,7 @@ nav {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(90deg, #a16207, #e9973a);
+	background: linear-gradient(90deg, #243549, #8fa5c3);
 	transition: width 0.3s ease;
 }
 
@@ -127,7 +127,7 @@ nav {
 }
 
 .nav-links ul li a:hover {
-	color: #e9973a;
+	color: #8fa5c3;
 }
 
 nav .fa {
@@ -151,7 +151,7 @@ nav .fa {
 
 .subtitle {
 	font-size: 1.2rem;
-	color: #e9973a;
+	color: #8fa5c3;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	margin-bottom: 1rem;
@@ -198,14 +198,14 @@ nav .fa {
 }
 
 .hero-btn.primary {
-	background: linear-gradient(45deg, #a16207, #e9973a);
+	background: linear-gradient(45deg, #243549, #8fa5c3);
 	color: #fff;
 	border: none;
 }
 
 .hero-btn.primary:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
+	box-shadow: 0 10px 25px #243549;
 }
 
 .hero-btn.secondary {
@@ -302,7 +302,7 @@ nav .fa {
 	display: block;
 	font-size: 2.5rem;
 	font-weight: 700;
-	color: #e9973a;
+	color: #243549;
 	margin-bottom: 0.5rem;
 }
 
@@ -334,7 +334,7 @@ nav .fa {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(135deg, rgba(161, 98, 7, 0.8) 0%, rgba(217, 119, 6, 0.6) 100%);
+	background: linear-gradient(135deg, rgba(168, 164, 158, 0.705) 0%, rgba(125, 162, 187, 0.651) 100%);
 	z-index: 1;
 	border-radius: 20px;
 }
@@ -364,7 +364,7 @@ nav .fa {
 }
 
 .section-subtitle {
-	color: #e9973a;
+	color: #243549;
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -410,13 +410,13 @@ nav .fa {
 .service-card:hover {
 	transform: translateY(-10px);
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-	border-color: #e9973a;
+	border-color: #243549;
 }
 
 .service-icon {
 	width: 80px;
 	height: 80px;
-	background: linear-gradient(45deg, #a16207, #e9973a);
+	background: linear-gradient(45deg, #243549, #8fa5c3);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -553,7 +553,7 @@ nav .fa {
 .contact-icon {
 	width: 60px;
 	height: 60px;
-	background: linear-gradient(45deg, #a16207, #e9973a);
+	background: linear-gradient(45deg, #243549, #8fa5c3);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -595,7 +595,7 @@ nav .fa {
 }
 
 .social-link:hover {
-	background: #e9973a;
+	background: #8fa5c3;	
 	transform: translateY(-3px);
 }
 
@@ -625,13 +625,13 @@ nav .fa {
 .form-group input:focus,
 .form-group textarea:focus {
 	outline: none;
-	border-color: #e9973a;
+	border-color: #8fa5c3;
 }
 
 .submit-btn {
 	width: 100%;
 	padding: 1rem 2rem;
-	background: linear-gradient(45deg, #a16207, #e9973a);
+	background: linear-gradient(45deg,#243549, #8fa5c3);	
 	color: #fff;
 	border: none;
 	border-radius: 10px;
@@ -647,7 +647,7 @@ nav .fa {
 
 .submit-btn:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
+	box-shadow: 0 10px 25px #8fa5c3;
 }
 
 /* Footer */
@@ -673,7 +673,7 @@ nav .fa {
 .footer-logo span {
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: #e9973a;
+	color: #8fa5c3;
 }
 
 .footer-links {
@@ -688,7 +688,7 @@ nav .fa {
 }
 
 .footer-links a:hover {
-	color: #e9973a;
+	color: #8fa5c3;
 }
 
 .footer-bottom {
@@ -705,7 +705,7 @@ nav .fa {
 	right: 2rem;
 	width: 50px;
 	height: 50px;
-	background: linear-gradient(45deg, #a16207, #e9973a);
+	background: linear-gradient(45deg,#243549, #8fa5c3);
 	color: #fff;
 	border-radius: 50%;
 	display: flex;
@@ -725,7 +725,19 @@ nav .fa {
 
 .back-to-top:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
+	box-shadow: 0 10px 25px #8fa5c3;
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4px;
+	width: 0;
+	background: linear-gradient(90deg, #243549, #8fa5c3);
+	box-shadow: 0 0 10px rgba(143, 165, 195, 0.8);
+	z-index: 10001;
 }
 
 /* Responsive Design */
