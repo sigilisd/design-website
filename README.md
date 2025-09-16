@@ -2,7 +2,9 @@
 
 Современный, адаптивный лендинг для креативного цифрового агентства с профессиональным дизайном и интерактивными элементами.
 
-<img width="1866" height="955" alt="image" src="https://github.com/user-attachments/assets/5f466324-98f8-4e40-a17b-9dbf7a443f20" />
+<img width="1866" height="955" alt="Opera Снимок_2025-09-16_144014_sigilisd github io" src="https://github.com/user-attachments/assets/6c63dd88-0a31-4b0b-b793-c0cb4052451b" />
+
+" />
 
 https://sigilisd.github.io/design-website/
 
